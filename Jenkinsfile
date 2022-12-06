@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("DOCKER FILE"){
             steps{
-                git url: "https://github.com/peddiraju3122b/DOCKERZONE.git"
+                git url: "https://github.com/peddiraju3122b/DOCKERZONE.git",
                 branch: "main"
             }
         }
