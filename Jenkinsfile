@@ -10,7 +10,7 @@ pipeline{
         stage('image container'){
             steps{
                 sh 'docker image pull spc:1.0 .' 
-                sh 'docker container run -d -it --name spc:1.0'
+                sh 'docker container run -d --name spc:1.0'
                 
             }
         }
