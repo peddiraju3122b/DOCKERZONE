@@ -10,7 +10,7 @@ pipeline{
         stage('image container'){
             steps{
                 sh 'docker image build -t spc:latest .' 
-                sh 'docker container run -d -P --name spc:latest /bin/sh '
+                sh 'docker container run -d -P --name spc-container spc:latest /bin/sh '
                 
             }
         }
