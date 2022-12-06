@@ -10,7 +10,6 @@ pipeline{
         stage("image container"){
             steps{
                 sh "docker image build spc:1.0 ."
-                sh "docker image ls"
                 sh "docker container run -d -it --name spc:1.0"
                 
             }
